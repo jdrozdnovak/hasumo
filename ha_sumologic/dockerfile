@@ -1,4 +1,5 @@
-FROM sumologic/collector:latest-file
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
 # Copy the run script
 COPY run.sh /

@@ -15,3 +15,4 @@ schema:
   collector_name: str
 map:
   - config:ro
+image: sumologic/collector:latest-file
