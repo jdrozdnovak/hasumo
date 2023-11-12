@@ -10,7 +10,7 @@ export SUMO_ACCESS_ID=$ACCESS_ID
 export SUMO_ACCESS_KEY=$ACCESS_KEY
 export SUMO_COLLECTOR_NAME=$COLLECTOR_NAME
 
-# Mount Docker socket
+# Check Docker socket
 DOCKER_SOCK="/var/run/docker.sock"
 if [ -S "$DOCKER_SOCK" ]; then
     echo "Docker socket found"

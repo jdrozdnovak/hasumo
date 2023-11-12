@@ -4,7 +4,7 @@ FROM sumologic/collector:latest
 COPY run.sh /
 RUN chmod a+x /run.sh
 
-# Docker socket
+# Mount Docker socket
 VOLUME ["/var/run/docker.sock"]
 
 CMD [ "/run.sh" ]
