@@ -1,5 +1,5 @@
 name: Sumo Logic Collector
-version: 1.0.2
+version: 1.0.3
 slug: sumologic_collector
 description: An addon to send logs to Sumo Logic
 init: false
