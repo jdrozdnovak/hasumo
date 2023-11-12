@@ -10,14 +10,10 @@ export SUMO_ACCESS_ID=$ACCESS_ID
 export SUMO_ACCESS_KEY=$ACCESS_KEY
 export SUMO_COLLECTOR_NAME=$COLLECTOR_NAME
 
-# Check Docker socket
-DOCKER_SOCK="/var/run/docker.sock"
-if [ -S "$DOCKER_SOCK" ]; then
-    echo "Docker socket found"
-else
-    echo "Docker socket not found"
-    exit 1
-fi
+# Set the source JSON file path for Sumo Logic collector
+COPY sumo-containers.json /etc/sumo-containers.json
+
+export SUMO_SOURCES_JSON="/etc/sumo-containers.json"
 
 # Start the Sumo Logic Collector
 exec sumo-start -q

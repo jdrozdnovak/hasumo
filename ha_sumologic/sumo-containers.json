@@ -1,0 +1,14 @@
+{
+    "api.version": "v1",
+    "sources": [
+      {
+        "sourceType" : "LocalFile",
+        "name": "home-assistant.log",
+        "pathExpression": "/config/home-assistant.log",
+        "multilineProcessingEnabled": false,
+        "automaticDateParsing": true,
+        "forceTimeZone": false,
+        "category": "collector-container"
+      }
+      ]
+  }

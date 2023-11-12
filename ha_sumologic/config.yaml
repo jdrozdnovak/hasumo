@@ -16,6 +16,4 @@ schema:
   access_key: str
   collector_name: str
 map:
-  - config:rw
-  - ssl:rw
-  - /var/run/docker.sock:/var/run/docker.sock
+  - config:ro
