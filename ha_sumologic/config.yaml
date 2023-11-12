@@ -1,5 +1,5 @@
 name: Sumo Logic Collector
-version: 1.0.3
+version: 1.0.4
 slug: sumologic_collector
 description: An addon to send logs to Sumo Logic
 init: false
@@ -15,4 +15,4 @@ schema:
   collector_name: str
 map:
   - config:ro
-image: sumologic/collector:latest-file
+image: "sumologic/collector:latest-file"
