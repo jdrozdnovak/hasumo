@@ -1,0 +1,10 @@
+FROM sumologic/collector:latest
+
+# Copy the run script
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+# Docker socket
+VOLUME ["/var/run/docker.sock"]
+
+CMD [ "/run.sh" ]
