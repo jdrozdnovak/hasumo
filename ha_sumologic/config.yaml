@@ -1,11 +1,10 @@
 name: Sumo Logic Collector
-version: 1.0.1
+version: 1.0.2
 slug: sumologic_collector
 description: An addon to send logs to Sumo Logic
 init: false
 arch:
   - amd64
-boot: auto
 options:
   access_id: ""
   access_key: ""
